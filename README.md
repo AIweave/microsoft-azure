@@ -37,12 +37,18 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 - **Part 2 (Observe ICMP Traffic)**
   - Use Microsoft Remote Desktop to connect to your Windows 10 Virtual Machine.
-  - Within Windows 10, install Wireshark from the internet.
+  - Within Windows 10, install [Wireshark](https://www.wireshark.org/download.html) from the internet.
   - Open Wireshark and filter for ICMP traffic only.
+ 
+    ![Screen Shot 2023-07-23 at 12 19 51 AM](https://github.com/AIweave/microsoft-azure/assets/121763338/12f634d8-2fd8-4bd9-a036-3f7b08b9a372)
+
+
   - Retrieve the private IP address of the Ubuntu VM and attempt to ping it from within the Windows 10 VM command prompt.
   - Observe ping requests and replies within WireShark.
     (A "Reply" means that Windows 10 successfully communicated with Ubuntu's network.)
     
+    ![Screen Shot 2023-07-23 at 12 15 09 AM](https://github.com/AIweave/microsoft-azure/assets/121763338/8b7e1a2b-a001-406f-9a2a-e63f3961d616)
+
 - **(Observe SSH Traffic)**
   - Back in Wireshark, filter for SSH traffic only.
   - From your Windows 10 VM,“SSH into” your Ubuntu Virtual Machine (via its private IP address) by typing "ssh (Private IP)" within the command prompt.
@@ -54,15 +60,15 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
   - Exit the SSH connection by typing ‘exit’ and pressing [Enter].
 
 - **(Observe DHCP Traffic)**
-  - Back in Wireshark, filter for DHCP traffic only
-  - From your Windows 10 VM, attempt to issue your VM a new IP address from the command line (ipconfig /renew)
-  - Observe the DHCP traffic appearing in WireShark
+  - Back in Wireshark, filter for DHCP traffic only.
+  - From your Windows 10 VM, attempt to issue your VM a new IP address from the command line (ipconfig /renew).
+  - Observe the DHCP traffic appearing in WireShark.
 
 - **(Observe DNS Traffic)**
-  - Back in Wireshark, filter for DNS traffic only
-  - From your Windows 10 VM within a command line, use nslookup to see what google.com and disney.com’s IP addresses are
-  - Observe the DNS traffic being show in WireShark
+  - Back in Wireshark, filter for DNS traffic only.
+  - In Windows 10 command prompt, type "nslookup www.google.com" to see what google.com's IP addresses istpc.
+  - Observe the DNS traffic being show in WireShark.
 
 - **(Observe RDP Traffic)**
-  - Back in Wireshark, filter for RDP traffic only (tcp.port == 3389)
+  - Back in Wireshark, filter for RDP traffic only by entering "tcp.port == 3389"
   - Observe the on-going spam of traffic 
