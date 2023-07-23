@@ -5,7 +5,7 @@
 
 In this tutorial, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
 
-**Must Know**: [Network Security Groups](https://docs.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview) is a tool in Azure that contains security rules that inspect incoming and outgoing traffic in a network for the allowing or denying of packages. [Wireshark](https://www.comptia.org/content/articles/what-is-wireshark-and-how-to-use-it) is the application used to capture and observe protocols being transmitted within a network. 
+**Must Know**: [Network Security Groups](https://docs.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview) is a tool in Azure that contains security rules that inspect incoming and outgoing traffic in a network for the allowing or denying of packages. [Wireshark](https://www.comptia.org/content/articles/what-is-wireshark-and-how-to-use-it) is the application used to capture and observe packets being transmitted in a network. 
 
 <h2>Video Demonstration</h2>
 
