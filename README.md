@@ -50,21 +50,35 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
   - From your Windows 10 VM,“SSH into” your Ubuntu Virtual Machine (via its private IP address) by typing "ssh (Private IP)" within the command prompt.
   - Enter "yes" to continue connecting, then enter the Ubuntu's creditials (username, pwd) for access. (The username@VM name will be highighted in green to signify a successful connection.)
 
+    ![Screen Shot 2023-07-25 at 11 03 11 AM](https://github.com/AIweave/microsoft-azure/assets/121763338/2583e876-1e80-4f7f-bb9d-e9168f644b2d)
+    
     ![Screen Shot 2023-07-22 at 11 59 13 PM](https://github.com/AIweave/microsoft-azure/assets/121763338/f3dff505-93a6-4c9a-ad2d-b26099608be1)
 
   - Observe SSH traffic spam in WireShark.
+
+    ![Screen Shot 2023-07-25 at 11 03 58 AM](https://github.com/AIweave/microsoft-azure/assets/121763338/9eb83e2c-2b25-4383-bce9-7e1a09b189d6)
+
   - Exit the SSH connection by typing ‘exit’ and pressing [Enter].
 
 - **(Observe DHCP Traffic)**
   - Back in Wireshark, filter for DHCP traffic only.
   - From your Windows 10 VM, attempt to issue your VM a new IP address from the command line (ipconfig /renew).
+ 
+    ![Screen Shot 2023-07-25 at 11 05 25 AM](https://github.com/AIweave/microsoft-azure/assets/121763338/805d5dc1-e27c-4403-b255-1d7efab320a0)
+
   - Observe the DHCP traffic appearing in WireShark.
 
 - **(Observe DNS Traffic)**
   - Back in Wireshark, filter for DNS traffic only.
   - In Windows 10 command prompt, type "nslookup www.google.com" to see what google.com's IP addresses istpc.
+
+    ![Screen Shot 2023-07-25 at 11 11 15 AM](https://github.com/AIweave/microsoft-azure/assets/121763338/2af23ab9-43c9-48a4-98cb-a03e3b7cadf2)
+
   - Observe the DNS traffic being show in WireShark.
 
 - **(Observe RDP Traffic)**
   - Back in Wireshark, filter for RDP traffic only by entering "tcp.port == 3389"
-  - Observe the on-going spam of traffic 
+  - Observe the on-going spam of traffic
+ 
+    ![Screen Shot 2023-07-25 at 11 06 45 AM](https://github.com/AIweave/microsoft-azure/assets/121763338/32b8a695-4b0d-4f7a-9ab0-cd2122055c50)
+
