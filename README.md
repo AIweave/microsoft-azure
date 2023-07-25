@@ -7,10 +7,6 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 **Must Know**: [Network Security Groups](https://docs.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview) is a tool in Azure that contains security rules that inspect incoming and outgoing traffic in a network for the allowing or denying of packages. [Wireshark](https://www.comptia.org/content/articles/what-is-wireshark-and-how-to-use-it) is the application used to capture and observe packets being transmitted in a network. Two virtual machines (VMs) will be used in this process. [Microsoft Remote Desktop](https://www.google.com/search?q=remote+desktop+is&client=safari&rls=en&biw=1920&bih=1000&sxsrf=AB5stBiOBLLwtDq2wH81RM_KnRnqJ48yhw%3A1690078451681&ei=84y8ZMCJKbukqtsPodeCMA&ved=0ahUKEwiAz4Tu4KOAAxU7kmoFHaGrAAYQ4dUDCA8&uact=5&oq=remote+desktop+is&gs_lp=Egxnd3Mtd2l6LXNlcnAiEXJlbW90ZSBkZXNrdG9wIGlzMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEiINlDdCFjUKnACeAGQAQOYAfcEoAGFGKoBCzQuOS4xLjEuMS4xuAEDyAEA-AEBqAIUwgIKEAAYRxjWBBiwA8ICBxAjGOoCGCfCAhYQLhgDGI8BGOoCGLQCGIwDGOUC2AEBwgIWEAAYAxiPARjqAhi0AhiMAxjlAtgBAcICCBAAGIoFGJECwgILEAAYgAQYsQMYgwHCAgsQLhiABBjHARjRA8ICCxAuGIAEGLEDGIMBwgIREC4YgwEYxwEYsQMY0QMYgATCAgsQLhiKBRixAxiDAcICERAuGIAEGLEDGIMBGMcBGNEDwgIEECMYJ8ICBxAjGIoFGCfCAgcQABiKBRhDwgIKEAAYigUYsQMYQ8ICCBAAGIAEGLEDwgILEAAYgAQYsQMYyQPiAwQYACBBiAYBkAYIugYGCAEQARgL&sclient=gws-wiz-serp) is a program for remotely connecting and interacting with a computer from another location. 
 
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: Azure Virtual Machines, Wireshark, and Network Security Groups](https://www.youtube.com)
-
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines)
